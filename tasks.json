@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: debug main.cpp",   // need to match the preLaunchTask in launch.json
+            "command": "g++",   // command and arguments to compile executable
+            "args": [
+                "main.cpp",
+                "-o",
+                "main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"   // working directory for compilation
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generate debug file"
+        }
+    ],
+    "version": "2.0.0"
+}
